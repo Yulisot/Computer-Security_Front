@@ -1,0 +1,51 @@
+
+form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* margin-top: 60px; */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.success-message {
+  color: #2ecc71;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-top: 10px;
+}
+
+body{
+  background-color: #eff5fa;
+  box-shadow: 8px 8px 30px rgba(2, 2, 2, 0.2);
+}

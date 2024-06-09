@@ -1,0 +1,42 @@
+<header>System Screen</header>
+
+
+<body><form [formGroup]="customerForm" (ngSubmit)="onSubmit()" class="customer-form">
+  <h3>Add Customer</h3>
+
+  <label for="name">Name:</label>
+  <input type="text" id="name" formControlName="name" required>
+
+  <label for="phone_number">Phone Number:</label>
+  <input type="text" id="phone_number" formControlName="phone_number" required>
+
+  <label for="email">Email Address:</label>
+  <input type="text" id="email" formControlName="email" required>
+
+  <button type="submit" [disabled]="!customerForm.valid">Add Customer</button>
+
+  <div *ngIf="newCustomerName" class="new-customer-name">
+    New customer added: {{ newCustomerName }}
+  </div>
+
+  <div *ngIf="customerDetails" class="customer-details">
+    <h3>Customer Details</h3>
+    <p><strong>Name:</strong> {{ customerDetails.name }}</p>
+  </div>
+
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+
+</form>
+
+<div class="button-container">
+  <button (click)="toggleapiversion()">Toggle API version</button>
+  <button (click)="navigateToPasswordChange()">Password Change</button>
+  <button (click)="logout()">Logout</button>
+</div>
+
+<div *ngIf="successMessage" class="success-message">
+  {{ successMessage }}
+</div>
+</body>

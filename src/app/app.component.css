@@ -1,0 +1,35 @@
+nav {
+  background-color: #669ed1;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 30px rgba(2, 2, 2, 0.2);
+}
+
+header {
+  color: #fff;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #58574c;
+}
+

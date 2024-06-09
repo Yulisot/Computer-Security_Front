@@ -1,0 +1,16 @@
+
+<body>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <h3>Login page</h3>
+  <label for="username">Username:</label>
+  <input type="text" id="username" formControlName="username" required>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" formControlName="password" required>
+
+  <button type="submit" [disabled]="!loginForm.valid">Login</button>
+  <button (click)="toggleapiVersion()">Toggle API Version</button>
+  <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+</form>
+</body>
